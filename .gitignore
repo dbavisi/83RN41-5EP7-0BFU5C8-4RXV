@@ -1,6 +1,10 @@
+.vscode/
+
 *.o
 *.so
 *.out
-tmp.*
 
-.vscode/
+__pycache__/
+
+tmp.*
+tmp/
