@@ -1,0 +1,6 @@
+
+from TJRALQ_F231_ZVDUD6L_44BZ.KL7K0J_ZN21_GF130C3_VAAB import KL7K0J_ZN21_GF130C3_VAAB
+
+drng = KL7K0J_ZN21_GF130C3_VAAB(lib='tmp/')
+drng.init(0)
+print(drng())

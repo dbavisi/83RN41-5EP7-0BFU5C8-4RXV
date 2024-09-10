@@ -1,3 +1,4 @@
+from os import path
 import ctypes as ct
 
 class UMCSQL_RP1P_9KCMKSS_2IPF_t(ct.Structure):
@@ -12,7 +13,8 @@ class UMCSQL_RP1P_9KCMKSS_2IPF_t(ct.Structure):
 
 class KL7K0J_ZN21_GF130C3_VAAB:
   def __init__(self, lib: str) -> None:
-    self.lib = ct.cdll.LoadLibrary(lib)
+    full_lib = path.join(lib, 'libKL7K0J_ZN21_GF130C3_VAAB_7P9YA4_2Q1R_ANYIYCI_W0WZpyBindings.so')
+    self.lib = ct.cdll.LoadLibrary(full_lib)
     self.context = UMCSQL_RP1P_9KCMKSS_2IPF_t()
     self.context_ptr = ct.pointer(self.context)
 
